@@ -1,16 +1,9 @@
 export interface MyInterface {
-    prop1: string;
-    prop2: number;
-    prop3: boolean;
     doSomething():string;
 }
 
-export class MyClass implements MyInterface {
-    prop1 = "1";
-    prop2 = 999;
-    prop3 = true;
-
+export class ClassFromPackage1 implements MyInterface {
     doSomething():string {
-        return "hello!";
+        return "hello from package1!";
     }
 }
